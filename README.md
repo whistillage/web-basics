@@ -4,8 +4,19 @@
 # 웹 기초 공부 노트
 
 ## 1. HTML 기본 태그
+- 기본 구조
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <title></title> : 페이지 제목
+            <meta charset="utf-8">
+        </head>
+        <body>
+        </body>
+    </html>
+
 - <strong></strong> : 굵게
-- <h1> ~ <h6></h1> ~ </h6> : 제목
+- <h1> ~ <h6></h1> ~ </h6> : 제목 강조
     1이 가장 크고 6이 가장 작음
 - <u></u> : 밑줄
 - <p></p> : 단락
