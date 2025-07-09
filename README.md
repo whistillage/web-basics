@@ -26,9 +26,15 @@
     width = "100%" : 이미지의 크기
 - <ol></ol>, <ul></ul> : 정렬, 비정렬 목록
     <li></li> : 자식 태그, 내용
-- <table> : 표
+- <table></table> : 표
     <tr></tr> : 자식 태그, 행
         <td></td> : 자식 태그, 열
+- <a></a> : 하이퍼링크
+    href : 링크 주소
+    target = "" : 어디에서 열지
+        _self(default) : 현재 탭
+        _blank : 새 탭
+    title = "" : 커서 올리면 나오는 제목
 
 ## 2. CSS 기본 스타일링
 
