@@ -35,6 +35,12 @@
         - _self(default) : 현재 탭
         - _blank : 새 탭
     - title = "" : 커서 올리면 나오는 제목
+- <iframe></iframe> : 다른 웹페이지나 콘텐츠 삽입
+    - src : URL
+    - width/height : 가로/세로 (px 또는 %)
+    - frameborder : 테두리 여부, 0은 테두리 없음
+    - allowfullscreen: 전체화면 여부 (전체화면 막으려면 명시 X. allowfullscreen="false"로 하지 않음.)
+    - loading = "lazy" : 스크롤될 때 로드되게 하여 성능 최적화
 
 ### 1-1. 웹호스팅과 웹서버
 - 웹호스팅
