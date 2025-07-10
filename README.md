@@ -69,6 +69,10 @@
     - localhost:5500/html/comments.html
     - localhost는 내 컴퓨터의 IP 주소와 동일
 
+### 1-3. 라이브 채팅 기능
+- tawk.to에서 코드를 긁어온 뒤 붙여넣기
+- 웹사이트에서 실시간으로 클라이언트와 대화할 수 있다.
+
 ## 2. CSS 기본 스타일링
 
 ## 3. JavaScript 기본 개념
