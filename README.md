@@ -5,7 +5,8 @@
 
 ## 1. HTML 기본 태그
 - 기본 구조
-    `<!DOCTYPE html>
+    ```html
+    <!DOCTYPE html>
     <html>
         <head>
             <title></title> : 페이지 제목
@@ -13,7 +14,8 @@
         </head>
         <body>
         </body>
-    </html>`
+    </html>
+    ```
 
 - <strong></strong> : 굵게
 - <h1> ~ <h6></h1> ~ </h6> : 제목 강조
@@ -79,6 +81,28 @@
 - 수명주기 : 첫방문(획득), 활동(참여), 구매(수익창출), 재방문(유지)
 
 ## 2. CSS 기본 스타일링
+- 세미콜론으로 각 효과를 구분
+
+### 2-1. 스타일링을 지정하는 여러 가지 방법
+1. html의 style 속성을 태그에 부여
+```html
+<h1><a href="index.html" style="color:red; text-decoration:none">WEB</a></h1>
+```
+
+2. head 태그 안에 style 태그 삽입
+- style 태그 내부는 CSS 코드로 인식
+    ```html
+    <head>
+            <style>
+                a {
+                    color:orange;
+                    text-decoration:none;
+                }
+            </style>
+        </head>
+    ```
+    - 여기에서 a{}는 선택자(selector)
+    - color:orange;는 효과(declaration)
 
 ## 3. JavaScript 기본 개념
 
