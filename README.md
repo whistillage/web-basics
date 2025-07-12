@@ -83,13 +83,13 @@
 ## 2. CSS 기본 스타일링
 - 세미콜론으로 각 효과를 구분
 
-### 2-1. 스타일링을 지정하는 여러 가지 방법
-1. html의 style 속성을 태그에 부여
+### 2-1. 효과를 지정하는 여러 가지 방법
+1. html의 style *속성*을 태그에 부여
 ```html
 <h1><a href="index.html" style="color:red; text-decoration:none">WEB</a></h1>
 ```
 
-2. head 태그 안에 style 태그 삽입
+2. head 태그 안에 style *태그* 삽입
 - style 태그 내부는 CSS 코드로 인식
     ```html
     <head>
@@ -102,7 +102,33 @@
         </head>
     ```
     - 여기에서 a{}는 선택자(selector)
-    - color:orange;는 효과(declaration)
+    - color:orange;는 선언(declaration)
+    - 효과 = property
+
+### 2-2. 여러 종류의 선택자
+- id 선택자 > class 선택자 > 태그 선택자
+    
+- id 선택자
+    ```css
+    #current {
+        color: red;
+    }```
+    - id = "current"가 명시된 태그에 반영됨
+    - **단 한 번만** 사용 가능
+- class 선택자
+    ```css
+    .underline {
+        text-decoration: underline;
+    }```
+    - 두 class의 효과가 중복되면, 더 아래에 등장하는 효과가 반영됨
+- 태그 선택자
+    ```css
+    a {
+        color:black;
+        text-decoration: none;
+    }
+    ```
+- 그 밖에 기호를 이용한 다양한 연산자의 조합이 있음
 
 ## 3. JavaScript 기본 개념
 
