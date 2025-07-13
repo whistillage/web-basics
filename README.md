@@ -2,6 +2,7 @@
 웹 해킹 입문을 위한 웹 기초 공부
 
 # 웹 기초 공부 노트
+[HTML, CSS, JS의 각 기술이 '통계적으로' 이용해도 되는지 확인하는 사이트](https://caniuse.com/)
 
 ## 1. HTML 기본 태그
 - 기본 구조
@@ -80,6 +81,7 @@
 - 사용자 정보 : 연령, 성별, 국가, 장치 등
 - 수명주기 : 첫방문(획득), 활동(참여), 구매(수익창출), 재방문(유지)
 
+---
 ## 2. CSS 기본 스타일링
 - 세미콜론으로 각 효과를 구분
 - display: none;
@@ -143,8 +145,26 @@
         - EX) <a>
 - 박스의 구조
     - contents < padding < border < margin
+    ![이미지](https://www.washington.edu/accesscomputing/webd2/student/unit3/images/boxmodel.gif)
     - 개발자 도구에서 element를 선택하고 styles를 누르면 확인 가능
         - 어떤 CSS 스타일의 영향을 받고 있는지 정리되어 있음
 
+### 2-4. 그리드
+- <div>, <span>
+    - 디자인을 위한 '내용이 없는 태그'
+    - 영역을 지정해 줌
+    - <div>: Block-Level / <span>: Inline-Level
+- 배치할 태그들의 **부모 태그**가 필요함
+- CODE
+    ```css
+        #grid {
+            display: grid;
+            grid-template-columns: 150px 1fr;
+        }
+    ```
+    - 1fr는 150px를 제외한 오른쪽 나머지 공간을 채움
+    - 2fr 3fr => 2:3 비율
+
+---
 ## 3. JavaScript 기본 개념
 
