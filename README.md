@@ -82,6 +82,8 @@
 
 ## 2. CSS 기본 스타일링
 - 세미콜론으로 각 효과를 구분
+- display: none;
+    - 화면에서 안 보이게
 
 ### 2-1. 효과를 지정하는 여러 가지 방법
 1. html의 style *속성*을 태그에 부여
@@ -129,6 +131,20 @@
     }
     ```
 - 그 밖에 기호를 이용한 다양한 연산자의 조합이 있음
+    - EX) a, h1 {}
+
+### 2-3. 박스 모델
+- Block-Level Element VS Inline-Level Element
+    - display: block; VS display: inline;
+        - CSS의 display 속성을 의미함
+    - Block: 그 줄 전체를 쓰고 줄넘김
+        - EX) <h1>
+    - Inline: 줄넘김 없음
+        - EX) <a>
+- 박스의 구조
+    - contents < padding < border < margin
+    - 개발자 도구에서 element를 선택하고 styles를 누르면 확인 가능
+        - 어떤 CSS 스타일의 영향을 받고 있는지 정리되어 있음
 
 ## 3. JavaScript 기본 개념
 
