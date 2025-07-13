@@ -110,6 +110,14 @@
     - color:orange;는 선언(declaration)
     - 효과 = property
 
+2-1. CSS 파일을 연결(link)
+- CODE
+    ```html
+    <link rel="stylesheet" href="style.css">
+    ```
+- rel: 현재 문서와 대상 간의 관계(relationship)
+    - stylesheet: 외부 파일이 .css
+
 ### 2-2. 여러 종류의 선택자
 - id 선택자 > class 선택자 > 태그 선택자
     
