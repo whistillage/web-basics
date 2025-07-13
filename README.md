@@ -132,8 +132,11 @@
         text-decoration: none;
     }
     ```
-- 그 밖에 기호를 이용한 다양한 연산자의 조합이 있음
-    - EX) a, h1 {}
+- 그 밖에 기호를 이용한 다양한 선택자의 조합이 있음
+    - a, h1 {}
+        - 모든 <a>와 <h1>에 대해
+    - #grid ol {}
+        - id = "grid"인 태그의 자식으로 속한 모든 ol 태그에 대해
 
 ### 2-3. 박스 모델
 - Block-Level Element VS Inline-Level Element
