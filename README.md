@@ -2,7 +2,8 @@
 웹 해킹 입문을 위한 웹 기초 공부
 
 # 웹 기초 공부 노트
-[HTML, CSS, JS의 각 기술이 '통계적으로' 이용해도 되는지 확인하는 사이트](https://caniuse.com/)
+- HTML, CSS, JS의 각 기술이 '통계적으로' 이용해도 되는지 확인하는 사이트
+    - https://caniuse.com/
 
 ## 1. HTML 기본 태그
 - 기본 구조
@@ -147,8 +148,8 @@
     - Inline: 줄넘김 없음
         - EX) <a>
 - 박스의 구조
-    - contents < padding < border < margin
     ![이미지](https://www.washington.edu/accesscomputing/webd2/student/unit3/images/boxmodel.gif)
+    - contents < padding < border < margin
     - 개발자 도구에서 element를 선택하고 styles를 누르면 확인 가능
         - 어떤 CSS 스타일의 영향을 받고 있는지 정리되어 있음
 
@@ -167,6 +168,23 @@
     ```
     - 1fr는 150px를 제외한 오른쪽 나머지 공간을 채움
     - 2fr 3fr => 2:3 비율
+
+### 2-5. 반응형 디자인
+- 다양한 기기에 맞게 각각 디자인을 다르게 하기 위함
+- media query를 이용
+- CODE
+    ```css
+    @media (min-width:800px) {
+        div {
+            display: none;
+        }
+    }
+    ```
+    - 가로 폭이 800px보다 크면 안 보이게
+- 조건을 만족하면 해당 스타일이 **덧씌워서** 적용됨
+    - 기존에 적용된 스타일이 초기화되는게 아님
+    - 후순위로 적용되는 것
+    - 윤곽선을 지우려면 ```border: none;```
 
 ---
 ## 3. JavaScript 기본 개념
