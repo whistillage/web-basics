@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>iDolphin | 나의 최애들을 핀하자 🐬</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/style.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!-- nav fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Indie+Flower&display=swap" rel="stylesheet">
+        <!-- main: name fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <a href="index.html">
+                    <img src="assets/logo.png" alt="logo" title="home" width="250px">
+                </a>
+                <!-- 1. 팝업 토글용 숨은 체크박스 -->
+                <!-- :checked라는 가상 선택자로 true/false 값을 가져옴 -->
+                <input type="checkbox" id="popup-toggle" hidden>
+                <!-- 2. 사용자에게 보이는 버튼 -->
+                <label for="popup-toggle" class="share-button"><img src="assets/share.png" alt="share" title="share" width="115px"></label>
+                <!-- 3. 팝업 박스 -->
+                <div class="popup">
+
+                    <div class="popup-content">
+                        <p>👇 URL 공유 👇</p>
+                        <input type="text" value="http://127.0.0.1:5500/projects/css_iDolpin/index.html" readonly>
+                        <br><br>
+                        <label for="popup-toggle" class="close-button">닫기</label>
+                    </div>
+                    
+                    <!-- 바깥쪽 클릭 시 닫힘 -->
+                    <label for="popup-toggle" class="overlay"></label>
+                </div>
+            </header>
+            <nav class="nav-font">
+                <a href="karina.html">KARINA</a>
+                <a href="winter.html">WINTER</a>
+                <a href="hanni.html">HANNI</a>
+                <a href="haerin.html">HAERIN</a>
+                <a href="chaewon.html">CHAEWON</a>
+                <a href="kazuha.html">KAZUHA</a>
+                <a id="selected" href="ahyeon.html">AHYEON</a>
+                <a href="asa.html">ASA</a>
+            </nav>
+            <main>
+                <section>
+                    <img id="photo" src="assets/ahyeon.jpg" height="640px">
+                    <div id="person-info">
+                        <table>
+                            <tr>
+                                <td></td>
+                                <td class="jua-regular" id="kor-name">
+                                    <p id="kor-name">정아현</p>
+                                    <p id="eng-name">Jeong Ahyeon</p>
+                                </td>
+                            </tr>
+                            <tr id="birthday">
+                                <td><img src="assets/birthday.png" width="40px"></td>
+                                <td class="second-col jua-regular">2007.04.11</td>
+                            </tr>
+                            <tr>
+                                <td><img src="assets/body.png" width="50px"></td>
+                                <td class="second-col jua-regular">163cm | A형 | 양손잡이</td>
+                            </tr>
+                            <tr id="group">
+                                <td><img src="assets/group.png" width="50px"></td>
+                                <td class="second-col jua-regular">BABYMONSTER | YG엔터테인먼트</td>
+                            </tr>
+                            <tr>
+                                <td><img src="assets/instagram.png" width="30px"></td>
+                                <td class="second-col jua-regular"><a target="_blank" title="instagram link" href="https://www.instagram.com/ahyeon.offficial?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">🔗 @ahyeon.offficial</a></td>
+                            </tr>
+                            <tr>
+                                <td><img src="assets/youtube.png" width="40px"></td>
+                                <td class="second-col jua-regular"><a target="_blank" title="youtube link" href="https://youtu.be/jPS1dDnyxTQ?si=f91NjdmjsEP70e2f">🔗 [페이스캠4K] 베이비몬스터 아현 'DRIP'(BABYMONSTER AHYEON FaceCam) @SBS Inkigayo 241117</a></td>
+                            </tr>
+                        </table>
+                    </div>
+                </section>
+            </main>
+            <footer>
+                <p>© 2025 WHIST. All rights reserved.</p>
+                <p>Developed by <strong>WHIST</strong> | <a href="https://github.com/whistillage" target="_blank" rel="noopener">GitHub</a></p>
+            </footer>
+        </div>
+    </body>
+</html>
