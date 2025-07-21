@@ -1,0 +1,212 @@
+.container {
+    max-width: 85rem;
+    width: 100%;
+
+    /* 가운데 배치: 상하 마진 0, 좌우 마진 동일 */
+    margin: 0 auto;
+
+    /* 내용이 너무 좌우에 붙지 않게 */
+    padding: 0 1rem;
+
+    /* padding, border를 너비 및 높이 계산에 포함시킴 -> 레이아웃이 예측 가능 */
+    /* 기본값: content-box */
+    box-sizing: border-box;
+}
+
+/* --------------- header ---------------- */
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 1rem;
+}
+
+header a {
+    /* 세로축 가운데 정렬 */
+    display: flex;
+    align-items: center;
+}
+
+.share-button {
+  cursor: pointer;
+}
+
+/* 반투명 검정 배경 띄우기 */
+.popup {
+  /* 브라우저 창에 고정 */
+  position: fixed;
+  /* top, right, bottom, left의 여백 조절
+  position과 같이 써야 함 */
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background: white;
+  /* 내용을 중심으로 팝업창 더 크게 */
+  padding: 2rem;
+  /* 가장자리 둥글게 */
+  border-radius: 1rem;
+  text-align: center;
+  width: 28rem;
+
+  /* overlay보다 팝업박스를 위에 배치 */
+  /* 원래 위치 그대로 사용 */
+  position: relative;
+  /* position이 있어야 작동하기 때문 */
+  z-index: 1;
+}
+
+.popup-content p {
+    font-size: 1.2rem;
+}
+
+.popup-content input {
+  width: 90%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.close-button {
+  cursor: pointer;
+  margin-top: 1rem;
+  /* inline과 block의 중간 속성. inline처럼 배치하는데 padding, margin을 설정할 수 있음. */
+  display: inline-block;
+  background: gray;
+  color: white;
+  padding: 0.3rem 1rem;
+  border-radius: 6px;
+}
+
+.overlay {
+  /* 가장 가까운 position이 있는 부모 요소를 따라감 -> popup
+  fixed로 하면 의도치 않은 겹침 현상 발생할 수 있음 */
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+#popup-toggle:checked + label + .popup {
+  display: flex;
+}
+
+
+/* --------------- nav ---------------- */
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin: 1rem;
+    border-bottom: 1px rgb(207, 207, 207) solid;
+}
+
+nav a {
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    padding: 1rem 0;
+}
+
+nav #selected {
+    background-color: rgb(240, 240, 240);
+}
+
+/* --------------- main ---------------- */
+main section {
+    display: grid;
+    /* 1열은 사진 크기에 맞게, 2열은 나머지 공간 채우게 */
+    grid-template-columns: auto 1fr;
+}
+
+main section #photo {
+    margin-left: 100px;
+}
+
+/* 테이블 상하/좌우 가운데 정렬 */
+main section #person-info {
+    margin: auto auto;
+}
+
+/* 미선택 시 텍스트 */
+#unselected {
+    text-align: center;
+    margin: 10rem;
+    color: gray;
+}
+
+/* --------------- table ---------------- */
+main table {
+    margin: 0 auto;
+
+    /* border 그었을 때 선이 이어지게 */
+    border-collapse: collapse;
+
+    width: 40rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+main table #birthday td {
+    padding-top: 1rem;
+}
+
+main table #group td {
+    border-bottom: 1px rgb(207, 207, 207) solid;
+    padding-bottom: 2rem;
+}
+
+main table img {
+    margin: 0;
+    padding: 0;
+}
+
+main table .second-col {
+    font-size: 1.2rem;
+}
+
+main table td {
+    text-align: center;
+    height: 5rem;
+}
+
+main table a {
+    text-decoration: none;
+    color: black;
+}
+
+#kor-name {
+    font-size: 3rem;
+    margin: 0;
+    padding-top: 0.5rem;
+}
+
+#eng-name {
+    font-size: 2rem;
+    margin: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+/* --------------- footer ---------------- */
+footer p {
+    text-align: right;
+}
+
+/* --------------- google fonts ---------------- */
+.nav-font {
+  font-family: "Indie Flower", cursive;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.1rem;
+  line-height: 1.2;
+  letter-spacing: 0.15rem;
+}
+
+.jua-regular {
+  font-family: "Jua", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1;
+}
