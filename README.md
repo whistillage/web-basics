@@ -39,6 +39,9 @@
         - _self(default) : 현재 탭
         - _blank : 새 탭
     - title = "" : 커서 올리면 나오는 제목
+    - rel = "noopener"
+        - target = "_blank"를 쓸 때, 열린 새 창이 부모 페이지의 JS 컨텍스트에 접근하지 못하도록 막아주는 보안 속성
+        - 악성 스크립트가 부모 창을 조작하는 위험 방지
 - <iframe></iframe> : 다른 웹페이지나 콘텐츠 삽입
     - src : URL
     - width/height : 가로/세로 (px 또는 %)
@@ -87,6 +90,15 @@
 - 세미콜론으로 각 효과를 구분
 - display: none;
     - 화면에서 안 보이게
+- font-size는 rem 단위 지향
+    - <html>의 font-size를 기준으로 크기 비율 계산
+    - ex) 2rem
+- margin 및 padding 축약형
+    - `margin: 10px;` : 모든 방향 10px
+    - `margin: 10px 20px;` : 상하 10px, 좌우 20px
+| `margin: 10px 20px 30px;`      | 상 10px, 좌우 20px, 하 30px |
+| `margin: 10px 20px 30px 40px;` | 상 10, 우 20, 하 30, 좌 40  |
+
 
 ### 2-1. 효과를 지정하는 여러 가지 방법
 1. html의 style *속성*을 태그에 부여
