@@ -208,8 +208,6 @@
 
 ---
 ## 3. JavaScript 기본 개념
-- 문자열: ''
-
 
 ### 3-1. 스크립트를 지정하는 여러 가지 방법
 1. <script> 태그
@@ -221,3 +219,21 @@
     - 검사 -> Console
         - Esc 누르면 하단에 뜸
     - 현재 웹페이지를 대상으로 실행됨
+
+### 3-2. 문자열과 숫자, 변수
+- 문자열
+    - '' or ""
+    - property
+        ```"string".length```
+    - method
+        ```js
+            "string".toUpperCase();
+            "string".indexOf('s');
+            "     string     ".trim();
+        ```
+- 숫자
+    - 산술 연산자: +, -, *, /
+- 변수
+    ```js
+        var name = "whist";
+    ```
