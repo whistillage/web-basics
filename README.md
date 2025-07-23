@@ -208,6 +208,22 @@
 
 ---
 ## 3. JavaScript 기본 개념
+- 연산자
+    - 산술 연산자: +, -, *, /
+    - 비교 연산자: ===, >, <
+- 디팩토링
+    - 변수의 이용
+        ```js
+        var target = document.querySelector('body');
+        target.style.color = 'white';
+        ```
+    - this
+        - 해당 스크립트가 실행되는 태그를 지칭
+        ```js
+        if (this.value === 'night'){
+            this.value = 'day';
+        }
+        ```
 
 ### 3-1. 스크립트를 지정하는 여러 가지 방법
 1. <script> 태그
@@ -220,7 +236,7 @@
         - Esc 누르면 하단에 뜸
     - 현재 웹페이지를 대상으로 실행됨
 
-### 3-2. 문자열과 숫자, 변수
+### 3-2. 문자열과 변수
 - 문자열
     - '' or ""
     - property
@@ -230,9 +246,6 @@
             "string".toUpperCase();
             "string".indexOf('s');
             "     string     ".trim();
-        ```
-- 숫자
-    - 산술 연산자: +, -, *, /
 - 변수
     ```js
         var name = "whist";
@@ -244,3 +257,15 @@
     document.querySelector('.myclass').style.backgroundColor = 'black';
     document.querySelector('#myid').style.backgroundColor = 'black';
 ```
+
+### 3-4. 조건문과 반복문
+- 조건문
+    ```js
+        if(true){
+
+        } else {
+
+        }
+    ```
+
+### 3-5
