@@ -237,3 +237,10 @@
     ```js
         var name = "whist";
     ```
+
+### 3-3. 태그 제어하기
+```js
+    document.querySelector('mytag').style.backgroundColor = 'black';
+    document.querySelector('.myclass').style.backgroundColor = 'black';
+    document.querySelector('#myid').style.backgroundColor = 'black';
+```
