@@ -211,7 +211,7 @@
 - 연산자
     - 산술 연산자: +, -, *, /
     - 비교 연산자: ===, >, <
-- 디팩토링
+- 리팩토링
     - 변수의 이용
         ```js
         var target = document.querySelector('body');
@@ -223,6 +223,13 @@
         if (this.value === 'night'){
             this.value = 'day';
         }
+        ```
+    - 함수
+        ```js
+            function myFunc(parameter){
+                // 리턴값이 명시되지 않으면 undefined를 반환
+                // 다른 값을 리턴할 때도 선언문은 동일
+            }
         ```
 
 ### 3-1. 스크립트를 지정하는 여러 가지 방법
@@ -275,12 +282,10 @@
     ```
 - 반복문
     ```js
-        var nList = document.querySelectorAll('a');
-        <!-- NodeList 값 반환 -->
-
+        var nList = document.querySelectorAll('a'); // NodeList 반환
         while(i < nList.length){}
         for(var i = 0; i < nList.length; i++){}
     ```
     
 
-### 3-5 
+### 3-5
