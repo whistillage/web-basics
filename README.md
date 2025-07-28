@@ -267,5 +267,20 @@
 
         }
     ```
+- 배열
+    ```js
+        var arr = ['a', 'b'];
+        arr.push('c');
+        arr.length;
+    ```
+- 반복문
+    ```js
+        var nList = document.querySelectorAll('a');
+        <!-- NodeList 값 반환 -->
 
-### 3-5
+        while(i < nList.length){}
+        for(var i = 0; i < nList.length; i++){}
+    ```
+    
+
+### 3-5 
