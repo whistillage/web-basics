@@ -16,6 +16,7 @@
                 document.querySelector('body').style.color = 'black';
             ">
         </div>
+        <!-- conditional statement ver. -->
         <div>
             <input id="toggle" type="button" value="night" onclick="
                 if (document.querySelector('#toggle').value === 'night'){
@@ -30,18 +31,27 @@
                 }
             ">
         </div>
+        <!-- conditional statement defactored ver. -->
+        <!-- loop ver. -->
         <div>
             <input type="button" value="night" onclick="
-                var target = document.querySelector('body')
+                var target = document.querySelector('body');
+                var aList = document.querySelectorAll('a');
                 if (this.value === 'night'){
                     target.style.backgroundColor = 'black';
                     target.style.color = 'white';
                     this.value = 'day';
+                    for (var i = 0; i < aList.length; i++){
+                        aList[i].style.color = 'powderblue';
+                    }
                 }
                 else {
                     target.style.backgroundColor = 'white';
                     target.style.color = 'black';
                     this.value = 'night';
+                    for (var i = 0; i < aList.length; i++){
+                        aList[i].style.color = 'blue';
+                    }
                 }
             ">
         </div>
