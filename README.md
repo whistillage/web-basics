@@ -288,4 +288,58 @@
     ```
     
 
-### 3-5
+### 3-5 객체
+- 중괄호로 선언
+    - property나 method는 ,로 구분
+- property 선언하는 법
+    ```js
+        var myObject = {
+            name1:"taehyun",
+            "name2":"juha"
+        };
+        myObject.name3 = "sungrak";
+        myObject[special name] = "mom";
+        
+        document.write(myObject.name3);
+        document.write(myObject[special name]);
+    ```
+    - 공백이 있는 property는 대괄호로 선언 및 호출
+    - ***문자열은 따옴표 생략해도 됨***
+- 반복문을 통한 property 접근
+    ```js
+        for(var key in myObject) {
+            document.write(key+' : '+myObject[key]+'<br>');
+        }
+    ```
+    - 변수를 통해 접근하려면 .가 아닌 []로 접근
+        - .는 문자열
+- method 선언하는 법
+    - **this는 해당 객체를 지칭**
+    - object 선언할 때
+        ```js
+        var myObject = {
+            "name1":"taehyun",
+            "name2":"juha",
+            // 첫 번째 방법
+            "showAll":function(){
+                for(var key in this) {
+                    document.write(key+' : '+this[key]+'<br>');
+                }
+            }
+            // 두 번째 방법(축약형)
+            showAll(){
+                for(var key in this) {
+                    document.write(key+' : '+this[key]+'<br>');
+                }
+            }
+        };
+        ```
+    - 나중에 추가할 때
+        ```js
+            myObject.showAll = function(){
+                for(var key in this) {
+                    document.write(key+' : '+this[key]+'<br>');
+                }
+            }
+            myObject.showAll();
+        ```
