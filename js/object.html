@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <h1>Create Object</h1>
+    <script>
+      var myObject = {
+        "name1":"taehyun",
+        "name2":"juha",
+        // 방법 1
+        // "showAll":function(){
+        //     for(var key in this) {
+        //         document.write(key+' : '+this[key]+'<br>');
+        //     }
+        // }
+        // 방법 2
+        // showAll(){
+        //     for(var key in this) {
+        //         document.write(key+' : '+this[key]+'<br>');
+        //     }
+        // }
+      };
+      document.write("name1 : "+myObject.name1+"<br>");
+      document.write("name2 : "+myObject.name2+"<br>");
+      myObject.name3 = "sungrak";
+      document.write("name3 : "+myObject.name3+"<br>");
+      myObject["special name"] = "mom";
+      document.write("special name : "+myObject["special name"]+"<br>");
+    </script>
+    <h2>Iterate</h2>
+    <script>
+        // 방법 3
+        myObject.showAll = function(){
+            for(var key in this) {
+                document.write(key+' : '+this[key]+'<br>');
+            }
+        }
+        myObject.showAll();
+    </script>
+  </body>
+</html>
