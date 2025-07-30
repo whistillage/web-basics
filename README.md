@@ -234,6 +234,8 @@
 
 ### 3-1. 스크립트를 지정하는 여러 가지 방법
 1. <script> 태그
+    - 파일을 따로 저장하고 불러오는 방법
+        ```<script src="colors.js"></script>```
 2. 이벤트
     - 웹 브라우저 위에서 일어나는 일
     - ex) onclick, onchange, onkeydown 등
@@ -291,6 +293,7 @@
 ### 3-5 객체
 - 중괄호로 선언
     - property나 method는 ,로 구분
+    - **this는 해당 객체를 지칭**
 - property 선언하는 법
     ```js
         var myObject = {
@@ -314,7 +317,6 @@
     - 변수를 통해 접근하려면 .가 아닌 []로 접근
         - .는 문자열
 - method 선언하는 법
-    - **this는 해당 객체를 지칭**
     - object 선언할 때
         ```js
         var myObject = {
@@ -343,3 +345,43 @@
             }
             myObject.showAll();
         ```
+
+## 4. 기타 메모
+
+### 4-1. 라이브러리
+- 작업에 필요한 부품을 가져다 쓰는 느낌
+- 대표적인 예: jQuery
+    - CDN(Content Delivery Network)을 이용하면 웹 주소만 갖고도 라이브러리 이용 가능
+        ```<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>```
+    - 훨씬 쉽고 간단한 코딩 가능
+        ```$('a').css('color', "powderblue");```
+
+### 4-2. API(Application Program Interface)
+- 프로그래밍할 때 사용하는 조작 장치
+- alert의 경고창처럼과 같은 웹브라우저의 여러 기능
+- 애플리케이션: 프로그램에 따라 API를 실행하는 것
+
+### 4-3. 기타 검색어
+- DOM, document
+    - 특정 태그를 삭제하거나 자식 태그를 추가하고 싶을 때
+    - document는 DOM의 일부
+- window
+    - 웹브라우저를 제어하고 싶을 때
+    - 새 창 열기
+    - 창의 크기 알아내기
+    - 현재 열려 있는 웹페이지의 주소 알아내기
+- ajax
+    - 웹페이지를 리로드하지 않고 정보를 변경하고 싶을 때
+- cookie
+    - 웹페이지가 리로드되어도 현재 상태를 유지하고 싶을 때
+    - 사용자에게 개인화된 서비스 제공 가능
+- offline web appliation
+    - 인터넷 없이 동작하는 웹 페이지를 만들고 싶을 때
+- webRTC
+    - 화상 통신 웹 앱 개발
+- speech
+    - 사용자의 음성 인식 및 음성으로 정보 전달
+- webGL
+    - 3차원 그래픽 게임 개발
+- webVR
+    - 가상현실
